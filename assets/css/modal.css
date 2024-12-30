@@ -1,0 +1,178 @@
+/* Estilização do modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: none;
+  border: none;
+  padding: 0;
+  position: relative;
+  width: 70%; /* Largura padrão para telas pequenas */
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 28px;
+  font-weight: bold;
+  background: black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.close:hover {
+  background: red;
+}
+
+/* Estilização do card */
+.pokemon-card {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Parte superior do card */
+.card-top {
+  background-color: #fff; /* Substituir com a cor do tipo do Pokémon */
+  padding: 60px;
+  text-align: center;
+  position: relative;
+}
+
+.card-top img {
+  width: 160px;
+  height: 180px;
+  object-fit: contain;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Estilização do background de acordo com os tipos */
+.card-top.normal {
+  background-color: #a6a877;
+}
+.card-top.grass {
+  background-color: #77c850;
+}
+.card-top.fire {
+  background-color: #ee7f30;
+}
+.card-top.water {
+  background-color: #678fee;
+}
+.card-top.electric {
+  background-color: #f7cf2e;
+}
+.card-top.ice {
+  background-color: #98d5d7;
+}
+.card-top.ground {
+  background-color: #dfbf69;
+}
+.card-top.flying {
+  background-color: #a98ff0;
+}
+.card-top.poison {
+  background-color: #a040a0;
+}
+.card-top.fighting {
+  background-color: #bf3029;
+}
+.card-top.psychic {
+  background-color: #f65687;
+}
+.card-top.dark {
+  background-color: #725847;
+}
+.card-top.rock {
+  background-color: #b8a137;
+}
+.card-top.bug {
+  background-color: #a8b720;
+}
+.card-top.ghost {
+  background-color: #6e5896;
+}
+.card-top.steel {
+  background-color: #b9b7cf;
+}
+.card-top.dragon {
+  background-color: #6f38f6;
+}
+.card-top.fairy {
+  background-color: #f9aec7;
+}
+
+/* Parte inferior do card */
+.card-bottom {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-bottom h2 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.card-bottom p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Borda arredondada na transição de cores */
+.card-top::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 20px 20px 0 0;
+  z-index: 1;
+}
+
+/* Responsividad do modal */
+@media screen and (min-width: 380px) {
+  .modal-content {
+    width: 70%; /* Ajuste para telas pequenas */
+    max-width: 350px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .modal-content {
+    width: 60%; /* Ajuste para telas médias */
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .modal-content {
+    max-width: 450px; /* Ajuste para telas grandes */
+  }
+}
