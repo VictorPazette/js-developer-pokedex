@@ -1,6 +1,4 @@
-# Trilha JS Developer - Pokedex
-
-# Pokédex Web Page
+# Pokédex Web Page - JS
 
 Esta página web é uma implementação simples de uma Pokédex, construída com **HTML**, **CSS** e **JavaScript**. A Pokédex exibe uma lista de Pokémons, com a possibilidade de carregar mais itens conforme necessário. A aplicação usa a PokéAPI para buscar os dados de cada Pokémon e apresenta as informações de forma organizada e intuitiva.
 Foi implementado também, um modal (pop-up) pra exibir alguns detalhes dos Pokemons ao clicar no card de cada Pokemon.
